@@ -1,0 +1,52 @@
+.title {
+    text-align: center;
+  }
+  .mainLayout {
+                max-width: 960px;
+                height: 400px;
+                width:100%;
+                background: lightgray;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 400px 100px;
+              }
+  
+              #gridLayout {
+                max-width: inherit;
+                width: 100%;
+                height: 300px;
+                background: lightgrey;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+              }
+  
+    button {
+      margin-left: 20px;
+      margin-top: 18px;
+      width: 100px;
+      background-color: #72C3DC;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 8px;
+      border-bottom: 3px solid #2B8EAD;
+    }
+  
+      @media screen and (max-width: 400px) {
+      .mainLayout {
+        grid-template-columns: 1fr;
+      }
+      #gridLayout{
+        grid-template-columns: 1fr;
+      
+          }
+          .buttonLayout{
+              grid-row-start:1;
+              grid-row-end:3;
+          }
+    }
